@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Regression</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Linear Regression</h1>
+    <hr style="color: rgb(0, 0, 0);">
+    <h2 style="color: rgb(0, 0, 0);">Provide an input value below</h2>
+    <form action="{{url_for('predict')}}" method="post">
+        <input type="text" placeholder="Enter value" name="model_input">
+        <br>
+        <button type="submit">Predict</button><br><br>
+        <b style="color: rgb(0, 0, 0); font-size: 22px;">{{statement}}</b>
+    </form>
+</body>
+</html>
